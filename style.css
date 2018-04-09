@@ -75,15 +75,15 @@ ul li, ol li { color: #737f85; font-size: 15px; line-height: 24px; margin: 0; pa
 	margin: 0;
 	padding: 25px 20px 30px;
 	position: absolute;
-	width: 30%;
+	width: 40%;
 	z-index: 0;	
-	top: 50%;
+	top: 45%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 .slide-caption h2 { font-weight: 400; color: #ffffff; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); margin: 0 0 16px; word-wrap:break-word; } 
-.slide-caption p { color: #ffffff; margin: 0 0 17px; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); letter-spacing: 0.5px; }
+.slide-caption p { font-size: 17px; color: #ffffff; margin: 0 0 17px; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); letter-spacing: 0.5px; }
 .flex-btn {
 	background-color: #5ca2df;
 	color: #ffffff;
@@ -109,7 +109,7 @@ ul li, ol li { color: #737f85; font-size: 15px; line-height: 24px; margin: 0; pa
 /* Section Title Css --------------------------------------------------------------------------------------------------------------- */
 .section-title { margin: 0 0 37px; padding: 0 15px; display: block; text-align: center; }
 .section-title .section-heading { font-family: 'Droid Sans'; color: #354656; font-weight: 400; margin: 0px 0 6px; }
-.section-title p, .section-title-small p { color: #9ea5a1; font-family: "Droid Serif"; font-weight: 400; font-style: italic; margin: 0; }
+.section-title p, .section-title-small p { font-size: 17px; color: #9ea5a1; font-family: "Droid Serif"; font-weight: 400; font-style: italic; margin: 0; }
 .section-title-small { margin: 0 0 37px; display: block; }
 .section-title-small .section-heading { color: #354656; font-weight: 400; margin: -5px 0 6px; }
 .section-title-mini { margin: 0 0 30px; display: block; }
