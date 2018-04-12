@@ -49,15 +49,14 @@
         });
 
         $('.icp-auto').on('click', function () {
-                wp.customizerRepeater.iconPickerToggle($(this));
+            wp.customizerRepeater.iconPickerToggle($(this));
         });
 
-        $(document).mouseup( function (e) {
+        $(document).mouseup(function (e) {
             var container = $('.iconpicker-popover');
 
             if (!container.is(e.target)
-                && container.has(e.target).length === 0)
-            {
+                && container.has(e.target).length === 0) {
                 container.removeClass('iconpicker-visible');
             }
         });

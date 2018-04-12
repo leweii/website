@@ -1,4 +1,5 @@
 /* global jQuery */
+
 /* global wp */
 function media_upload(button_class) {
     'use strict';
@@ -61,7 +62,7 @@ function customizer_repeater_uniqid(prefix, more_entropy) {
         }
         if (reqWidth > seed.length) { // so short we pad
             return new Array(1 + (reqWidth - seed.length))
-                    .join('0') + seed;
+                .join('0') + seed;
         }
         return seed;
     };
@@ -78,7 +79,7 @@ function customizer_repeater_uniqid(prefix, more_entropy) {
 
     retId = prefix; // start with prefix, add current milliseconds hex string
     retId += formatSeed(parseInt(new Date()
-            .getTime() / 1000, 10), 8);
+        .getTime() / 1000, 10), 8);
     retId += formatSeed(php_js.uniqidSeed, 5); // add seed hex string
     if (more_entropy) {
         // for more entropy we add a float lower to 10
@@ -122,7 +123,7 @@ function customizer_repeater_refresh_social_icons(th) {
 
 
 function customizer_repeater_refresh_general_control_values() {
-	
+
     'use strict';
     jQuery('.customizer-repeater-general-control-repeater').each(function () {
         var values = [];
@@ -131,8 +132,8 @@ function customizer_repeater_refresh_general_control_values() {
             var icon_value = jQuery(this).find('.icp').val();
             var text = jQuery(this).find('.customizer-repeater-text-control').val();
             var link = jQuery(this).find('.customizer-repeater-link-control').val();
-			var designation = jQuery(this).find('.customizer-repeater-designation-control').val();
-			var open_new_tab = jQuery(this).find('.customizer-repeater-checkbox').attr("checked") ? 'yes' : 'no';
+            var designation = jQuery(this).find('.customizer-repeater-designation-control').val();
+            var open_new_tab = jQuery(this).find('.customizer-repeater-checkbox').attr("checked") ? 'yes' : 'no';
             var color = jQuery(this).find('.customizer-repeater-color-control').val();
             var image_url = jQuery(this).find('.custom-media-url').val();
             var choice = jQuery(this).find('.customizer-repeater-image-choice').val();
@@ -155,8 +156,8 @@ function customizer_repeater_refresh_general_control_values() {
                     'choice': choice,
                     'title': escapeHtml(title),
                     'subtitle': escapeHtml(subtitle),
-					'designation' : designation,
-					'open_new_tab' : open_new_tab,
+                    'designation': designation,
+                    'open_new_tab': open_new_tab,
                     'social_repeater': escapeHtml(social_repeater),
                     'id': id,
                     'shortcode': escapeHtml(shortcode)
@@ -175,7 +176,7 @@ jQuery(document).ready(function () {
     var theme_conrols = jQuery('#customize-theme-controls');
     theme_conrols.on('click', '.customizer-repeater-customize-control-title', function () {
         jQuery(this).next().slideToggle('medium', function () {
-            if (jQuery(this).is(':visible')){
+            if (jQuery(this).is(':visible')) {
                 jQuery(this).prev().addClass('repeater-expanded');
                 jQuery(this).css('display', 'block');
             } else {
@@ -184,7 +185,7 @@ jQuery(document).ready(function () {
         });
     });
 
-    theme_conrols.on('change', '.icp',function(){
+    theme_conrols.on('change', '.icp', function () {
         customizer_repeater_refresh_general_control_values();
         return false;
     });
@@ -213,7 +214,7 @@ jQuery(document).ready(function () {
     });
 
     var color_options = {
-        change: function(event, ui){
+        change: function (event, ui) {
             customizer_repeater_refresh_general_control_values();
         }
     };
@@ -227,7 +228,7 @@ jQuery(document).ready(function () {
         var id = 'customizer-repeater-' + customizer_repeater_uniqid();
         if (typeof th !== 'undefined') {
             /* Clone the first box*/
-            var field = th.find('.customizer-repeater-general-control-repeater-container:first').clone( true, true );
+            var field = th.find('.customizer-repeater-general-control-repeater-container:first').clone(true, true);
 
             if (typeof field !== 'undefined') {
                 /*Set the default value for choice between image and icon to icon*/
@@ -259,11 +260,11 @@ jQuery(document).ready(function () {
 
                 /*Remove value from text field*/
                 field.find('.customizer-repeater-text-control').val('');
-				
-				 /*Remove value from designation  text field*/
-				field.find('.customizer-repeater-designation-control').val('');
-				
-				/*Set the default value in slide format*/
+
+                /*Remove value from designation  text field*/
+                field.find('.customizer-repeater-designation-control').val('');
+
+                /*Set the default value in slide format*/
                 field.find('.customizer-repeater-checkbox').val('');
 
                 /*Remove value from link field*/
@@ -288,8 +289,7 @@ jQuery(document).ready(function () {
 
                 /*Remove value from shortcode field*/
                 field.find('.customizer-repeater-shortcode-control').val('');
-				
-				
+
 
                 /*Append new box*/
                 th.find('.customizer-repeater-general-control-repeater-container:first').parent().append(field);
@@ -305,7 +305,7 @@ jQuery(document).ready(function () {
 
     theme_conrols.on('click', '.social-repeater-general-control-remove-field', function () {
         if (typeof    jQuery(this).parent() !== 'undefined') {
-            jQuery(this).parent().hide(500, function(){
+            jQuery(this).parent().hide(500, function () {
                 jQuery(this).parent().remove();
                 customizer_repeater_refresh_general_control_values();
 
@@ -336,23 +336,21 @@ jQuery(document).ready(function () {
     theme_conrols.on('keyup', '.customizer-repeater-link-control', function () {
         customizer_repeater_refresh_general_control_values();
     });
-	
-	theme_conrols.on('keyup','.customizer-repeater-designation-control', function(){
-		
-		customizer_repeater_refresh_general_control_values();
-	});
-	
-	theme_conrols.on('change','.customizer-repeater-checkbox', function(){
-		
-		customizer_repeater_refresh_general_control_values();
-	});
 
-	 theme_conrols.on('keyup', '.customizer-repeater-link-control', function () {
+    theme_conrols.on('keyup', '.customizer-repeater-designation-control', function () {
+
         customizer_repeater_refresh_general_control_values();
     });
-	
-	
-	
+
+    theme_conrols.on('change', '.customizer-repeater-checkbox', function () {
+
+        customizer_repeater_refresh_general_control_values();
+    });
+
+    theme_conrols.on('keyup', '.customizer-repeater-link-control', function () {
+        customizer_repeater_refresh_general_control_values();
+    });
+
 
     /*Drag and drop to change icons order*/
 
@@ -370,10 +368,10 @@ jQuery(document).ready(function () {
         var th = jQuery(this).parent();
         var id = 'customizer-repeater-social-repeater-' + customizer_repeater_uniqid();
         if (typeof th !== 'undefined') {
-            var field = th.find('.customizer-repeater-social-repeater-container:first').clone( true, true );
+            var field = th.find('.customizer-repeater-social-repeater-container:first').clone(true, true);
             if (typeof field !== 'undefined') {
-                field.find( '.icp' ).val('');
-                field.find( '.input-group-addon' ).find('.fa').attr('class','fa');
+                field.find('.icp').val('');
+                field.find('.input-group-addon').find('.fa').attr('class', 'fa');
                 field.find('.social-repeater-remove-social-item').show();
                 field.find('.customizer-repeater-social-repeater-link').val('');
                 field.find('.customizer-repeater-social-repeater-id').val(id);
