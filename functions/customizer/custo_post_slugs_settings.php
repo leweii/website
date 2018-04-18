@@ -1,5 +1,6 @@
-<?php 
-function busiprof_post_slugs_settings( $wp_customize ){
+<?php
+function busiprof_post_slugs_settings($wp_customize)
+{
 
 	/* Post slug section */
 	$wp_customize->add_section( 'custom_post_slug_section' , array(
@@ -87,4 +88,5 @@ class WP_amenities_Customize_Control extends WP_Customize_Control {
 		);
 		
 }
-add_action( 'customize_register', 'busiprof_post_slugs_settings' );
+
+add_action('customize_register', 'busiprof_post_slugs_settings');
