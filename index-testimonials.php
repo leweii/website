@@ -49,7 +49,7 @@ if( $current_options['home_testimonial_section_enabled']=='on' ) { ?>
 			
 			<!-- /Section Title -->					
 						
-			<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myTestimonial">
+			<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="5000" id="myTestimonial">
 				<div class="carousel-inner">
 					<?php
 					$t=true;

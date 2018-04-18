@@ -17,6 +17,13 @@
 	<div class="site-info">
 		<div class="container">
 			<div class="row">
+				
+				<div class="col-md-3">
+					<p>
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">闽ICP备18008699</a>
+					</p>
+				</div>
+				
 				<div class="col-md-7">
 				<?php 
 				if( $current_options['footer_copyright_text'] != '' ) { ?>

@@ -14,7 +14,9 @@ $current_options = wp_parse_args(  get_option( 'busiprof_theme_options', array()
 ?>	
 </head>
 <body <?php body_class(); ?>>
-
+<div style='display:none;'>
+     <img src='http://ontsol.ltd/wp-content/uploads/2018/04/svg-logo.png' />
+</div>
 <!-- Navbar -->	
 <nav class="navbar navbar-default">
 	<div class="container">

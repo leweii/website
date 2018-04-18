@@ -109,7 +109,7 @@ ul li, ol li { color: #737f85; font-size: 15px; line-height: 24px; margin: 0; pa
 /* Section Title Css --------------------------------------------------------------------------------------------------------------- */
 .section-title { margin: 0 0 37px; padding: 0 15px; display: block; text-align: center; }
 .section-title .section-heading { font-family: 'Droid Sans'; color: #354656; font-weight: 400; margin: 0px 0 6px; }
-.section-title p, .section-title-small p { font-size: 17px; color: #9ea5a1; font-family: "Droid Serif"; font-weight: 400; font-style: italic; margin: 0; }
+.section-title p, .section-title-small p { font-size: 17px; color: #9ea5a1; font-family: "微软雅黑"; font-weight: 400; font-style: italic; margin: 0; }
 .section-title-small { margin: 0 0 37px; display: block; }
 .section-title-small .section-heading { color: #354656; font-weight: 400; margin: -5px 0 6px; }
 .section-title-mini { margin: 0 0 30px; display: block; }
