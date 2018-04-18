@@ -194,16 +194,6 @@ ul li, ol li {
 }
 
 /* Section Title Css --------------------------------------------------------------------------------------------------------------- */
-<<<<<<< HEAD
-.section-title { margin: 0 0 37px; padding: 0 15px; display: block; text-align: center; }
-.section-title .section-heading { font-family: 'Droid Sans'; color: #354656; font-weight: 400; margin: 0px 0 6px; }
-.section-title p, .section-title-small p { font-size: 17px; color: #9ea5a1; font-family: "微软雅黑"; font-weight: 400; font-style: italic; margin: 0; }
-.section-title-small { margin: 0 0 37px; display: block; }
-.section-title-small .section-heading { color: #354656; font-weight: 400; margin: -5px 0 6px; }
-.section-title-mini { margin: 0 0 30px; display: block; }
-.section-title-mini .section-heading { font-weight: 400; margin: 0px; }
-.section-title-mini .section-heading span { color: #737f85; font-size: 14px; line-height: 25px; }
-=======
 .section-title {
     margin: 0 0 37px;
     padding: 0 15px;
@@ -253,7 +243,6 @@ ul li, ol li {
     font-size: 14px;
     line-height: 25px;
 }
->>>>>>> 68c51090fb8c222bb89de4f0384f8c8fb3800c85
 
 /* Page Title Css -------------------------------------------------------------------------------------------------------------------------- */
 .page-header {
@@ -482,7 +471,7 @@ a.rsswidget::before {
 }
 
 .other-service ul li {
-    background: rgba(0, 0, 0, 0) url("../images/bullate.png") no-repeat scroll left center;
+    background: rgba(0, 0, 0, 0) url("./images/bullate.png") no-repeat scroll left center;
     padding-left: 25px;
     list-style: outside none;
 }
@@ -934,9 +923,8 @@ a.rsswidget::before {
 }
 
 .testimonial-scroll .post .entry-content:after {
-    border-color: rgba(255, 255, 255, 0);
+    border: 15px rgba(255, 255, 255, 0);
     border-top-color: #ffffff;
-    border-width: 15px;
     left: 24px;
     margin-left: -0px;
 }

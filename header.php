@@ -14,15 +14,10 @@
     ?>
 </head>
 <body <?php body_class(); ?>>
-<<<<<<< HEAD
 <div style='display:none;'>
      <img src='http://ontsol.ltd/wp-content/uploads/2018/04/svg-logo.png' />
 </div>
-<!-- Navbar -->	
-=======
-
 <!-- Navbar -->
->>>>>>> 68c51090fb8c222bb89de4f0384f8c8fb3800c85
 <nav class="navbar navbar-default">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
