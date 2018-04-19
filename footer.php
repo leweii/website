@@ -17,15 +17,9 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <p>
                         <a href="http://www.miitbeian.gov.cn/" target="_blank">闽ICP备18008699号</a>
-                    </p>
-                </div>
-
-                <div class="col-md-3">
-                    <p>
-                        |
                     </p>
                 </div>
 
